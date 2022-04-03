@@ -29,4 +29,3 @@ const ToyList = (props) => {
 }
 
 export default ToyList
-

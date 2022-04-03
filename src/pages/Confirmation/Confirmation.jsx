@@ -1,8 +1,5 @@
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom'
 
-// Components
-import PageHeader from '../../components/PageHeader/PageHeader'
-
 const Confirmation = (props) => {
   const { id } = useParams()
   const { state } = useLocation()
@@ -17,7 +14,10 @@ const Confirmation = (props) => {
 
   return (
     <>
-      <PageHeader title="Delete Confirmation" />
+      <div className="page-header">
+        <h1>Delete Confirmation</h1>
+        <img src={NerdCat} alt="A cat using a computer" />
+      </div>
       <section className="confirmation">
         <h2>Are you sure you want to delete {state?.name}?</h2>
         <Link className="btn submit" to={`/${resource}/${id}`}>Cancel</Link>
