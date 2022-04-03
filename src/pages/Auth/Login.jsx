@@ -22,7 +22,7 @@ const Login = ({ setUser }) => {
       setUser(currentUser)
       navigate('/cats')
     } catch (err) {
-      setForm({ ...form, error: err })
+      setForm({ ...form, error: err.toString()})
     }
   }
 
@@ -42,7 +42,7 @@ const Login = ({ setUser }) => {
       </div>
 
       {form.error &&
-        <h3 className="red-text">Something went wrong.</h3>
+        <h3 className="red-text">{form.error}</h3>
       }
 
       <section className="form-container">

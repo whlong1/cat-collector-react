@@ -47,6 +47,9 @@
 }
 
 .red-text {
+  line-height: 1.5;
+  max-width: 500px;
+  word-wrap: break-word;
   padding: 0px 0px 20px 24px;
   color: rgb(194, 72, 72);
 }
