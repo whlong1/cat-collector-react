@@ -6,10 +6,10 @@ const ToyInput = ({ form, handleChange }) => {
         value={form.name ? form.name : ''} onChange={handleChange} id="name"
         required name="name" type="text" placeholder="Name" autoComplete="off"
       />
-      <label htmlFor="desc">Age</label>
+      <label htmlFor="description">Description</label>
       <input
-        value={form.description ? form.description : ''} onChange={handleChange} id="desc"
-        required name="desc" type="text" placeholder="Description" autoComplete="off"
+        value={form.description ? form.description : ''} onChange={handleChange} id="description"
+        required name="description" type="text" placeholder="Description" autoComplete="off"
       />
       <label htmlFor="color">Color</label>
       <input
