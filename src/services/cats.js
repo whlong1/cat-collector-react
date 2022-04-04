@@ -1,5 +1,5 @@
 import * as tokenService from './tokenService'
-const BASE_URL = `${process.env.REACT_APP_API_URL}/cats/`
+const BASE_URL = `${process.env.REACT_APP_API_URL}/api/cats/`
 
 export const create = async (cat) => {
   try {
