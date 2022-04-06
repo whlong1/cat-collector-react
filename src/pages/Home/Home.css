@@ -1,9 +1,9 @@
 .home-container {
+  padding: 0 50px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  min-height: calc(100vh - 55px);
 }
 
 .logo-container {
@@ -21,6 +21,7 @@
 
 .home-container .logo-container {
   max-width: 375px;
+  display: none;
 }
 
 .home-container .cat-logo-container {
@@ -28,6 +29,7 @@
 }
 
 .login-container {
+  margin-top: 10px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -77,12 +79,15 @@
 
 @media only screen and (min-width: 768px) {
   .home-container {
+    padding: 0;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    min-height: calc(100vh - 55px);
   }
 
   .login-container {
+    margin-top: none;
     display: flex;
     padding: 10px 8px;
     align-items: center;
@@ -104,5 +109,6 @@
 
   .home-container .logo-container {
     max-width: 520px;
+    display: flex;
   }
 }
