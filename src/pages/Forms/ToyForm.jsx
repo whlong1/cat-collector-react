@@ -28,12 +28,12 @@ const ToyForm = (props) => {
 
   useEffect(() => {
     const fetchOne = async () => {
-      const data = await getOne(id)
+      const toyData = await getOne(id)
       setForm({
-        id: data.toy.id,
-        name: data.toy.name,
-        color: data.toy.color,
-        description: data.toy.description,
+        id: toyData.id,
+        name: toyData.name,
+        color: toyData.color,
+        description: toyData.description,
       })
     }
     id ? fetchOne() : setForm({ color: '#ff0000' })

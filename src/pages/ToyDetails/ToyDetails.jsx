@@ -15,8 +15,8 @@ const ToyDetails = ({ user }) => {
 
   useEffect(() => {
     const fetchOne = async () => {
-      const data = await getOne(id)
-      setToy(data.toy)
+      const toyData = await getOne(id)
+      setToy(toyData)
     }
     fetchOne()
   }, [id])

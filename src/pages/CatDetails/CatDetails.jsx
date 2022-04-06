@@ -19,7 +19,7 @@ const CatDetails = ({ catImages, user }) => {
   const addToCollection = async (e) => {
     e.preventDefault()
     const toyId = parseInt(e.target.id)
-    let updatedCat = await assocToy(cat.id, toyId)
+    const updatedCat = await assocToy(cat.id, toyId)
     setAvailableToys(availableToys.filter(toy => toyId !== toy.id))
     setCat({...updatedCat, fed: cat.fed})
   }
@@ -28,7 +28,7 @@ const CatDetails = ({ catImages, user }) => {
     const fetchOne = async () => {
       const data = await getOne(id)
       setCat(data.cat)
-      setAvailableToys(data.toys)
+      setAvailableToys(data.available_toys)
     }
     fetchOne()
   }, [id])
