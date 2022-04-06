@@ -1,11 +1,9 @@
 .home-container {
-  height: 85vh;
-  width: 100vw;
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 50px;
   align-items: flex-start;
   justify-content: center;
+  min-height: calc(100vh - 55px);
 }
 
 .logo-container {
@@ -25,14 +23,13 @@
   max-width: 375px;
 }
 
-.home-container .cat-container {
+.home-container .cat-logo-container {
   width: 80%;
 }
 
 .login-container {
   height: 100%;
   display: flex;
-  margin-top: 10px;
   flex-direction: column;
 }
 
