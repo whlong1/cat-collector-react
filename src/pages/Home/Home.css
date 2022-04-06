@@ -1,7 +1,7 @@
 .home-container {
-  padding: 0 50px;
   display: flex;
   flex-wrap: wrap;
+  padding: 0 50px;
   align-items: flex-start;
   justify-content: center;
 }
@@ -29,9 +29,9 @@
 }
 
 .login-container {
-  margin-top: 10px;
   height: 100%;
   display: flex;
+  margin-top: 10px;
   flex-direction: column;
 }
 
