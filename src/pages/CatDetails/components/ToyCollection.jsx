@@ -26,7 +26,7 @@ const ToyCollection = ({ cat, toys, user, addToCollection }) => {
         <>
           <h3>Available Toys</h3>
           <div className="subsection-content">
-            {toys.length
+            {toys?.length
               ? toys.map((toy) => <ToyContainer key={toy.id} toy={toy} cat={cat} user={user} addToCollection={addToCollection} />)
               : <p className="all-toys"> {cat.name} already has all the available toys 🥳</p>
             }
