@@ -30,7 +30,7 @@ const Home = ({ user, setUser }) => {
   return (
     <div className="home-container">
       <section className="logo-container" >
-        <div className="cat-container">
+        <div className="cat-logo-container">
           <img src={Splash} alt="The Cat Collector Cat" />
         </div>
         <img src={LogoType} alt="Text reads: Cat Collector" />

@@ -21,12 +21,12 @@
   box-shadow: var(--card-box-shadow);
 }
 
-.card h2 {
+.toy-card h2 {
   margin: 7px 0;
   font-size: var(--font-xl);
 }
 
-.card p {
+.toy-card p {
   margin: 0;
   font-size: var(--font-reg);
 }

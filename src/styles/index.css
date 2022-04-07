@@ -185,8 +185,9 @@ nav li:hover {
   }
 
   main {
-    max-width: 1300px;
+    max-width: 1920px;
     min-height: calc(100vh - 53px);
+    margin: 0 auto;
   }
 
   nav,
@@ -245,7 +246,7 @@ nav li:hover {
     top: 20px;
     max-width: 1920px;
     border-bottom: none;
-    margin: 20px 20px 0 20px;
+    margin: 20px auto 0 auto;
     width: calc(100vw - 40px);
     background-color: transparent;
   }
